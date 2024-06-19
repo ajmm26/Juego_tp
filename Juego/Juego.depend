@@ -1,26 +1,41 @@
 # depslib dependency file v1.0
-1717947409 source:c:\users\ale\desktop\juego\menu.cpp
+1718408044 source:c:\users\ale\desktop\juego\menu.cpp
 	"funciones.h"
 	<iostream>
 
-1717952863 source:c:\users\ale\desktop\juego\main.cpp
+1718408553 source:c:\users\ale\desktop\juego\main.cpp
 	<iostream>
 	"funciones.h"
 	<windows.h>
 	<stdio.h>
+	<ctime>
+	<algorithm>
 
-1717952863 c:\users\ale\desktop\juego\funciones.h
+1718765375 c:\users\ale\desktop\juego\funciones.h
 	<iostream>
 
 1717942258 c:\users\ale\desktop\juego\menu.cpp
 	"funciones.h"
 	<iostream>
 
-1717953041 source:c:\users\ale\desktop\juego\modosdejuego.cpp
+1718766200 source:c:\users\ale\desktop\juego\modosdejuego.cpp
 	"funciones.h"
 	<iostream>
 
 1717951348 source:c:\users\ale\desktop\juego\nombres.cpp
 	"funciones.h"
 	<iostream>
+
+1718764959 source:c:\users\ale\desktop\juego\dados.cpp
+	<iostream>
+	"funciones.h"
+	<algorithm>
+
+1718765375 source:c:\users\ale\desktop\juego\reglas.cpp
+	<iostream>
+	"funciones.h"
+
+1718765449 source:c:\users\ale\desktop\juego\marcadores.cpp
+	<iostream>
+	"funciones.h"
 

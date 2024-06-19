@@ -8,6 +8,7 @@ cout<<"                                               ESCALERA O 100            
 cout<<"                                             BIENVENIDO AL ARCADE                                    "<<endl;
 cout<<" ----------------------------------------------------------------------------------------------------------------------"<<endl;;
  system("pause");
+ menu();
 
 }
 
@@ -22,7 +23,6 @@ cout<<"1- Un jugador"<<endl;
 cout<<"2- multijugador"<<endl;
 cout<<""<<endl;
 cout<<"Seleccione el modo de juego: ";
-
 
 
 

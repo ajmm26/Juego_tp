@@ -2,11 +2,16 @@
 #include "funciones.h"
 #include <windows.h>
 #include <stdio.h>
+#include <ctime>
+#include <algorithm>
 using namespace std;
 
 
 int main()
 {
+///semilla
+ srand(time(0));
+
 ///diseño de la consola
 system("COLOR F0");
 
@@ -14,7 +19,7 @@ system("COLOR F0");
 bienvenida();
 
 ///Menu principal
-menu();
+
 
 ///decision del modo de juego
 int modoDeJuego;
@@ -24,20 +29,22 @@ decision(modoDeJuego);
 
 ///Nombres
 string name;
-string Nombres[2]={};
+string nombres[2]={};
 if(modoDeJuego==1){
 cout<<"Ingrese el nombre: ";
 cin.ignore();
 getline(cin, name);
 
 ///saludo a un jugador
-SaludoMultijugador(Nombres, name, modoDeJuego);
+SaludoMultijugador(nombres, name, modoDeJuego);
 encabezadoUnjugador(modoDeJuego, name);
+
 }
 ///Saludo a jugadores
 else{
-    ingresovectorNombres(Nombres);
-    SaludoMultijugador(Nombres, name, modoDeJuego);
+    ingresovectorNombres(nombres);
+    SaludoMultijugador(nombres, name, modoDeJuego);
+    encabezadoMultijugador(nombres,modoDeJuego);
 
 }
 
