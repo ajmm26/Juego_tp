@@ -14,6 +14,7 @@ for(int i=0; i<6; i++){
 
 }
 
+
 }
 
 
@@ -37,16 +38,34 @@ int tam=6;
 
 }
 
-void visualizacion_Del_dado(int dados[6]){
+
+void dadosOrdenados(int dados[6]){
 
 ordenarVector(dados);
 
 }
 
-void nose_verdado(int dados[6]){
-for(int i=0; i<6; i++){
-
-cout<<"dado "<<i+1<<": "<<dados[i]<<endl;
-
-}
+void icono_dados(int dados[6]){
+    for(int i=0; i<6; i++){
+        switch(dados[i]){
+        case 1:
+           imprimirCara1();
+            break;
+        case 2:
+           imprimirCara2();
+           break;
+        case 3:
+           imprimirCara3();
+           break;
+        case 4:
+            imprimirCara4();
+            break;
+        case 5:
+            imprimirCara5();
+            break;
+        case 6:
+            imprimirCara6();
+            break;
+        }
+    }
 }

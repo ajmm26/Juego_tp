@@ -34,14 +34,19 @@
 		</Compiler>
 		<Unit filename="Modosdejuego.cpp" />
 		<Unit filename="Reglas.cpp" />
+		<Unit filename="cara_de_dados.cpp" />
 		<Unit filename="dados.cpp" />
 		<Unit filename="funciones.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="impresion.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="marcadores.cpp" />
 		<Unit filename="menu.cpp" />
 		<Unit filename="nombres.cpp" />
+		<Unit filename="puntaje_Multijugador.cpp" />
+		<Unit filename="puntaje_UnJugador.cpp" />
+		<Unit filename="rlutil.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
