@@ -5,7 +5,6 @@ using namespace std;
 
 
 void bienvenida();
-void menu();
 void decision(int num);
 
 ///peticion de los nombres multijugador
@@ -18,7 +17,7 @@ void SaludoMultijugador(string nombres[2], int mododejuego,string nombreMax,  in
 void saludo_Un_Jugador(string name, int mododejuego);
 
 ///encabezado de jugador(nombre,ronda,turno y puntuacion)
-void encabezadoUnjugador(int mododejuego, string name,,string nombreMax,  int puntajeMax);
+void encabezadoUnjugador(int mododejuego, string name,string nombreMax,  int puntajeMax);
 
 /// Encabezado multijugador
 void encabezadoMultijugador(string nombres[2], int modoDeJuego, string nombreMax,  int puntajeMax);
@@ -108,7 +107,7 @@ void peticion_nombre_Un_jugador(int num, string nombreMax,  int puntajeMax);
 
 
 
-void menu_trasero(int num);
+int menu_trasero(int num, string nombreMax, int puntajeMax);
 
 int revision_ganador_un_jugador(int puntaje_J1[1]);
 

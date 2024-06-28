@@ -24,9 +24,11 @@ cout<<guion;
 system("pause");
 }
 
+void mostrarPuntuacionMasAlta( string nombreMax="",  int puntajeMax = 0){}
 
-void menu_trasero(int mododejuego, string nombreMax,  int puntajeMax){
+int menu_trasero(int mododejuego=0, string nombreMax="",  int puntajeMax = 0){
 system("cls");
+if(mododejuego!=0)
 decision(mododejuego);
 
  system("cls");
@@ -44,8 +46,6 @@ decision(mododejuego);
   system("cls");
   //todo string nombreMax,  int puntajeMax
 
-string nombreMax ='';  
-int puntajeMax = 0;
   switch (modoDeJuego) {
     case 0:
       return 0;
@@ -62,7 +62,7 @@ int puntajeMax = 0;
           peticion_nombre_Un_jugador_simulado(modoDeJuego);
       break;*/
     case 4:
-      mostrarPuntuacionMasAlta( nombreMax,   puntajeMax)
+      mostrarPuntuacionMasAlta( nombreMax,   puntajeMax);
     break;
   }
 }

@@ -28,7 +28,7 @@ getline(cin, name);
 system("cls");
 saludo_Un_Jugador(name,mododejuego);
 system("pause");
-encabezadoUnjugador(mododejuego,name);
+encabezadoUnjugador(mododejuego,name,nombreMax,puntajeMax);
 
 
 }

@@ -146,3 +146,67 @@
 	<iostream>
 	"rlutil.h"
 
+1719608731 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\cara_de_dados.cpp
+	<iostream>
+	"funciones.h"
+
+1719613366 c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\funciones.h
+	<iostream>
+
+1719608731 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\dados.cpp
+	<iostream>
+	"funciones.h"
+	"rlutil.h"
+
+1719608731 c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1719608731 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\impresion.cpp
+	<iostream>
+	"funciones.h"
+	"rlutil.h"
+
+1719608731 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\marcadores.cpp
+	<iostream>
+	"funciones.h"
+
+1719608731 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\puntaje_multijugador.cpp
+	<iostream>
+	"funciones.h"
+
+1719608731 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\puntaje_unjugador.cpp
+	<iostream>
+	"funciones.h"
+	"rlutil.h"
+
+1719613162 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\modosdejuego.cpp
+	"funciones.h"
+	<iostream>
+
+1719613181 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\reglas.cpp
+	<iostream>
+	"funciones.h"
+
+1719613303 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\nombres.cpp
+	"funciones.h"
+	<iostream>
+	"rlutil.h"
+
+1719613366 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\main.cpp
+	<iostream>
+	"funciones.h"
+	<windows.h>
+	<stdio.h>
+	<ctime>
+

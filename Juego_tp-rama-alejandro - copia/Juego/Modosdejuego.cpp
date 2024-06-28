@@ -72,7 +72,7 @@ void encabezadoUnjugador(int mododejuego, string name,string nombreMax,  int pun
   //TODO  ,string nombreMax,  int puntajeMax)
 ganador_un_jugador(puntaje,name);
 espacios();
-menu_trasero(mododejuego);
+menu_trasero(mododejuego, nombreMax, puntajeMax);
 }
 
 
@@ -94,5 +94,5 @@ void encabezadoMultijugador(string nombres[2], int mododejuego, string nombreMax
 
 }
 
-    menu_trasero(mododejuego, );
+    menu_trasero(mododejuego, nombreMax,  puntajeMax);
 }

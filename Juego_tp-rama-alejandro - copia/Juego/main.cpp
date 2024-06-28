@@ -17,7 +17,7 @@ system("COLOR F0");
 
 
 bienvenida();
-menu_trasero();
+return menu_trasero(0,"",0);
 
 
 

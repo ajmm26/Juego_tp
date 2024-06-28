@@ -169,7 +169,7 @@ return 2;
 }
 
 
-
+/*
 int[] obtenerValorDados() {
   int dados[6] = {};
   int num;
@@ -182,7 +182,7 @@ int[] obtenerValorDados() {
 
   return dados;
 }
-
+*/
 void compararPuntuacionEnTodoElJuego(string nombreActual, int puntajeActual,
                                      string nombreMax, int puntajeMax) {
   if (puntajeActual <= puntajeMax) {
