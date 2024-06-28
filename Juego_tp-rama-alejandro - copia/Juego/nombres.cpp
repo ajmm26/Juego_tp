@@ -4,7 +4,7 @@
 using namespace std;
 
 
-/*
+/*void peticion_nombre_Un_jugador_simulado(int mododejuego){
 decision(mododejuego);
 string name;
 cout<<"Ingrese el nombre: ";

@@ -31,6 +31,7 @@ void menu(){
 
 system("cls");
 
+
 cout<<"--------------------------------------------------------Menu Principal------------------------------------------------"<<endl;
 cout<<"Modos de juego: "<<endl;
 cout<<"1- Un jugador"<<endl;
