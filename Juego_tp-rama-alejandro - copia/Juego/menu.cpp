@@ -24,7 +24,17 @@ cout<<guion;
 system("pause");
 }
 
-void mostrarPuntuacionMasAlta( string nombreMax="",  int puntajeMax = 0){}
+void mostrarPuntuacionMasAlta( string nombreMax,  int puntajeMax = 0){
+     system("cls");
+    if(puntajeMax==0){
+      cout << "TODAVIA NO HAY PUNTUACION MAXIMA";
+    } else {
+    cout << "LA PUNTUACION MAXIMA es del Jugador " << nombreMax
+         << " con " << puntajeMax << " puntos!";
+    }
+    cout << endl<< endl;
+     system("pause");
+}
 
 int menu_trasero(int mododejuego=0, string nombreMax="",  int puntajeMax = 0){
 system("cls");
@@ -36,7 +46,7 @@ decision(mododejuego);
   cout << "1- Un jugador" << endl;
   cout << "2- Multijugador" << endl;
   /// cout <<"3- Simulado"<<endl;
-  cout << "4- Ver Puntuación más alta" << endl;
+  cout << "4- Ver Puntuacion mas alta" << endl;
   cout << "0- Salir del juego" << endl;
   cout << "" << endl;
   cout << "Seleccione el modo de juego: ";
@@ -63,6 +73,7 @@ decision(mododejuego);
       break;*/
     case 4:
       mostrarPuntuacionMasAlta( nombreMax,   puntajeMax);
+      menu_trasero( mododejuego,  nombreMax,   puntajeMax );
     break;
   }
 }

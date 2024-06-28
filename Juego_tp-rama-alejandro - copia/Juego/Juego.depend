@@ -210,3 +210,11 @@
 	<stdio.h>
 	<ctime>
 
+1719613420 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\menu.cpp
+	<iostream>
+	"funciones.h"
+	<windows.h>
+	<stdio.h>
+	<ctime>
+	"rlutil.h"
+
