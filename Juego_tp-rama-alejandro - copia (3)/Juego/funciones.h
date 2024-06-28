@@ -125,6 +125,14 @@ void imprimir_tirada(int dados[6],bool tirada_de_diez, bool tirada_de_cero, bool
 void ganador_un_jugador(int puntaje, string name);
 int corte_por_escalera();
 
+void jugador_modo_simulado(int mododejuego, string name);
+int modo_simulado(string name, int turno, int dados[6],int puntaje_J3[1]);
+  void dadosOrdenados_simulados(int dados[6]);
+  void ordenarVector_simulado(int dados[6]);
+  void seisDados_simulados(int dados[6]);
+  void peticion_nombre_Un_jugador_simulado(int mododejuego);
+
+
 
 
 #endif // FUNCIONES_H_INCLUDED

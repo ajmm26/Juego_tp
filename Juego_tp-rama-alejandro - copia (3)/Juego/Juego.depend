@@ -78,10 +78,10 @@
 	<iostream>
 	"funciones.h"
 
-1719590942 c:\users\ale\desktop\juego_tp-rama-alejandro\juego\funciones.h
+1719597660 c:\users\ale\desktop\juego_tp-rama-alejandro\juego\funciones.h
 	<iostream>
 
-1719592904 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\dados.cpp
+1719595806 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\dados.cpp
 	<iostream>
 	"funciones.h"
 	"rlutil.h"
@@ -112,11 +112,11 @@
 	<stdio.h>
 	<ctime>
 
-1719592817 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\marcadores.cpp
+1719597575 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\marcadores.cpp
 	<iostream>
 	"funciones.h"
 
-1719448093 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\menu.cpp
+1719597063 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\menu.cpp
 	<iostream>
 	"funciones.h"
 	<windows.h>
@@ -124,7 +124,7 @@
 	<ctime>
 	"rlutil.h"
 
-1719592423 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\modosdejuego.cpp
+1719597575 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\modosdejuego.cpp
 	"funciones.h"
 	<iostream>
 
@@ -141,7 +141,7 @@
 	<iostream>
 	"funciones.h"
 
-1719522460 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\nombres.cpp
+1719597119 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\nombres.cpp
 	"funciones.h"
 	<iostream>
 	"rlutil.h"

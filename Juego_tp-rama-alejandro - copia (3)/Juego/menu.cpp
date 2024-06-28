@@ -35,6 +35,7 @@ cout<<"--------------------------------------------------------Menu Principal---
 cout<<"Modos de juego: "<<endl;
 cout<<"1- Un jugador"<<endl;
 cout<<"2- multijugador"<<endl;
+///cout<<"3- simulado"<<endl;
 cout<<""<<endl;
 cout<<"Seleccione el modo de juego: ";
 
@@ -49,13 +50,19 @@ string nombres[2]={};
 int modoDeJuego;
 cin>>modoDeJuego;
 system("cls");
-if(modoDeJuego==1){
+switch(modoDeJuego){
+case 1:
 peticion_nombre_Un_jugador(modoDeJuego);
-}
+break;
 
-else{
 
+case 2:
 ingresovectorNombres(nombres,modoDeJuego);
+break;
+
+/*case 3:
+    peticion_nombre_Un_jugador_simulado(modoDeJuego);
+break;*/
 
 }
 }

@@ -1,5 +1,66 @@
 #include <iostream>
 #include"funciones.h"
+using namespace std;
+
+/*int modo_simulado(string name, int turno, int dados[6],int puntaje_J3[1])
+{
+    int tiradas[3]= {};
+    int puntaje=0;
+
+    int ronda;
+    for(ronda=1; ronda<4; ronda++)
+    {
+    bool revision_diez=false;
+    bool revision_cero=false;
+    bool revision_escalera=false;
+        dadosOrdenados_simulados(dados);
+        revision_escalera=escalera(dados);
+        if(revision_escalera==false){
+
+        revision_diez=reglas_dados(dados,ronda,tiradas);
+        revision_cero=cero(dados,tiradas,ronda);
+        }
+        if(revision_cero==false && revision_diez==false)
+        {
+            puntaje_UnJugador(ronda,dados,tiradas);
+        }
+        cout<<"___________________________________________________________________________________________________________________"<<endl;
+        cout<<"                                                                                                                   "<<endl;
+
+        cout<<"                         "<<name<<"             |    "<<"Turno: "<<turno<<"                 |"<<"Ronda: "<<ronda<<"       "<<endl;
+        cout<<"                                                                                                                   "<<endl;
+        cout<<"___________________________________________________________________________________________________________________"<<endl;
+        cout<<"                                                                                                                   "<<endl;
+        cout<<"                             Puntuacion: "<<puntaje_J3[0]<<"                                                     "<<endl;
+        cout<<"                                                                                                                   "<<endl;
+        cout<<"___________________________________________________________________________________________________________________"<<endl;
+       dados_dibujados(dados);
+       espacios();
+       if(revision_escalera==true){
+        puntaje=corte_por_escalera();
+        system("pause");
+        system("cls");
+        return puntaje;
+       }
+       imprimir_tirada(dados,revision_diez,revision_cero,revision_escalera);
+       espacios();
+       system("pause");
+        system("cls");
+    }
+    max_puntacion(tiradas,puntaje_J3);
+   puntaje=revision_ganador_un_jugador(puntaje_J3);
+  return puntaje;
+}*/
+
+
+
+
+
+
+
+
+
+
 
 int marcador_Unjugador(string name, int turno, int dados[6],int puntaje_J1[1])
 {

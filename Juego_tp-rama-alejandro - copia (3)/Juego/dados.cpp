@@ -7,6 +7,7 @@ int tirarDado()
     return rand()% 6 + 1;
 }
 
+
 void seisDados(int dados[6]){
 for(int i=0; i<6; i++){
 
@@ -45,6 +46,41 @@ void dadosOrdenados(int dados[6]){
 ordenarVector(dados);
 
 }
+
+/*void dadosOrdenados_simulados(int dados[6]){
+
+ordenarVector_simulado(dados);
+
+}
+
+
+void ordenarVector_simulado(int dados[6]){
+int tam=6;
+ seisDados_simulados(dados);
+ int aux;
+    for(int i = 0; i < tam-1; i++)
+    {
+        for(int j = i+1; j < tam; j++)
+        {
+            if(dados[j]<dados[i])
+            {
+                aux = dados[j];
+                dados[j]=dados[i];
+                dados[i]=aux;
+            }
+        }
+    }
+
+
+}
+
+ void seisDados_simulados(int dados[6]){
+
+ for(int i=0; i<6; i++){
+
+  cin>>dados[i];
+}
+ }*/
 
 void dados_dibujados(int dados[6]){
   system("COLOR F0");

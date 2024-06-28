@@ -4,6 +4,18 @@
 using namespace std;
 
 
+/*
+decision(mododejuego);
+string name;
+cout<<"Ingrese el nombre: ";
+cin.ignore();
+getline(cin, name);
+system("cls");
+saludo_Un_Jugador(name,mododejuego);
+system("pause");
+jugador_modo_simulado(mododejuego,name);
+
+}*/
 
 void peticion_nombre_Un_jugador(int mododejuego){
 
@@ -17,6 +29,7 @@ system("cls");
 saludo_Un_Jugador(name,mododejuego);
 system("pause");
 encabezadoUnjugador(mododejuego,name);
+
 
 }
 
@@ -46,6 +59,7 @@ cout<<name;
 string saludo_2=", buena suerte!!!";
 cout<<saludo_2;
 cout<<""<<endl;
+
 
 }
 
