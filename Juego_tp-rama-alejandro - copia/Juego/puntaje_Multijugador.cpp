@@ -44,7 +44,6 @@ void guardado_del_puntaje(int i,int ronda,int a,int b, int puntajes_rondas_J1[3]
     {
 
         puntajes_rondas_J1[ronda-1]=a;
-        cout<<a<<endl;
     }
 
 
@@ -52,7 +51,6 @@ void guardado_del_puntaje(int i,int ronda,int a,int b, int puntajes_rondas_J1[3]
     {
 
         puntajes_rondas_J2[ronda-1]=b;
-        cout<<b<<endl;
 
     }
 
@@ -72,8 +70,6 @@ void buscardor_maximo_puntaje(int i, int puntajes_rondas_J1[3], int puntajes_ron
 
     for(int x=0; x<3; x++)
     {
-        cout<<"j1: "<<puntajes_rondas_J1[x]<<endl;
-        cout<<"j2: "<<puntajes_rondas_J2[x]<<endl;
 
         if(com1<puntajes_rondas_J1[x])
         {
@@ -112,5 +108,24 @@ void guardar_maximo(int com1,int com2,int puntajes[2])
     puntajes[1]+=com2;
 
 
+
+}
+int quien_gana_por_escalera(int i)
+{
+
+    if(i==0)
+    {
+        return 1;
+    }
+        else
+        {
+
+                if(i==1)
+                {
+                    return 2;
+                }
+
+
+        }
 
 }

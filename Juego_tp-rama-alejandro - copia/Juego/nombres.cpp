@@ -15,6 +15,7 @@ cin.ignore();
 getline(cin, name);
 system("cls");
 saludo_Un_Jugador(name,mododejuego);
+system("pause");
 encabezadoUnjugador(mododejuego,name);
 
 }
@@ -44,7 +45,7 @@ cout<<saludo;
 cout<<name;
 string saludo_2=", buena suerte!!!";
 cout<<saludo_2;
-
+cout<<""<<endl;
 
 }
 
@@ -56,6 +57,7 @@ cout<<saludo_2;
 
     for(int x=0; x<1; x++){
     cout<<""<<endl;
+
     cout<<"Bienvenidos al juego "<<nombres[x]<<" y "<<nombres[x+1]<<", buena suerte!"<<endl;
 
 

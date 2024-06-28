@@ -49,8 +49,8 @@ void encabezadoUnjugador(int mododejuego, string name)
 
 
     }
-
-ganador(name);
+ganador_un_jugador(puntaje,name);
+espacios();
 menu_trasero(mododejuego);
 }
 
@@ -60,26 +60,18 @@ void encabezadoMultijugador(string nombres[2], int mododejuego)
      system("cls");
     decision(mododejuego);
     int i;
+    bool escalera;
     string nombre_ganador;
-    int espuntaje=0;
+    int puntaje=0;
     int dados[6]= {};
     int turno=1;
     int puntajes[2]= {};
-    while(espuntaje<100)
-    {
-        marcador_multijugador(nombres,dados,turno,puntajes,espuntaje);
-        espuntaje=revision_de_ganador_por_puntaje(nombres,nombre_ganador,puntajes);
+        while(puntaje<100){
+        marcador_multijugador(nombres,dados,turno,puntajes,puntaje);
         turno++;
-    }
+        puntaje=revision_de_ganador_por_puntaje(nombres,puntajes);
 
+}
 
     menu_trasero(mododejuego);
 }
-
-
-
-
-
-
-
-

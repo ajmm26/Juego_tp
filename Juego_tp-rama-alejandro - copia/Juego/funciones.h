@@ -57,7 +57,7 @@ int verificacion_100(int puntajes[2]);
 void buscardor_maximo_puntaje(int i, int puntajes_rondas_J1[3], int puntajes_rondas_J2[3], int puntajes[2]);
 
 
-void ganador(string nombre);
+void ganador(string nombre,int valor);
 
 void puntaje_UnJugador(int ronda,int dados[6],int tiradas[3]);
 
@@ -81,13 +81,13 @@ void icono_dados(int dados[6]);
     void imprimirCara6();
 
 
- bool revision_de_escalera_dos_jugadores(int puntajes[2], int i, int dados[6]);
+ bool revision_de_escalera_dos_jugadores(int dados[6],int i,int puntajes[2]);
 
 
 bool reglas_dados(int dados[6], int ronda, int tiradas[3]);
 
 
-bool diez_O_Cero(int tiradas[3], int ronda, int valor);
+bool diez(int tiradas[3], int ronda, int valor);
 
 
 bool escalera(int dados[6]);
@@ -97,12 +97,12 @@ bool escalera(int dados[6]);
 void ganador_por_escalera(string ganador_de_la_escalera);
 
 
-int revision_de_ganador_por_puntaje(string nombres[2], string nombre_ganador, int puntajes[2]);
+int revision_de_ganador_por_puntaje(string nombres[2], int puntajes[2]);
 
 
 void impresion_ganador_escalera(string titulo_ganador_escalera ,string titulo_ganador_escalera2, string ganador_de_la_escalera);
 
-void impresion_ganador(string cadena_ganador, string cadena_ganador2,string nombre);
+void impresion_ganador(string cadena_ganador, string cadena_ganador2,string cadena_ganador3,string nombre,int valor);
 
 void peticion_nombre_Un_jugador(int num);
 
@@ -113,7 +113,18 @@ void menu_trasero(int num);
 
 void elegir_menu_final();
 
-
 int revision_ganador_un_jugador(int puntaje_J1[1]);
+
+bool cero(int dados[6], int tirada[3], int ronda);
+
+void dados_dibujados(int dados[6]);
+void dibujar_cuadrado(int posx, int posy);
+void dibujar_dado(int numero, int posx, int posy);
+void espacios();
+void imprimir_tirada(int dados[6],bool tirada_de_diez, bool tirada_de_cero, bool revision_escalera);
+void ganador_un_jugador(int puntaje, string name);
+int corte_por_escalera();
+
+
 
 #endif // FUNCIONES_H_INCLUDED
