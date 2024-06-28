@@ -9,19 +9,19 @@ void menu();
 void decision(int num);
 
 ///peticion de los nombres multijugador
-void ingresovectorNombres(string nombres[2], int num);
+void ingresovectorNombres(int num,string nombreMax,  int puntajeMax);
 
 
 ///saludo a los jugadores
-void SaludoMultijugador(string nombres[2], int mododejuego);
+void SaludoMultijugador(string nombres[2], int mododejuego,string nombreMax,  int puntajeMax);
 
 void saludo_Un_Jugador(string name, int mododejuego);
 
 ///encabezado de jugador(nombre,ronda,turno y puntuacion)
-void encabezadoUnjugador(int mododejuego, string name);
+void encabezadoUnjugador(int mododejuego, string name,,string nombreMax,  int puntajeMax);
 
 /// Encabezado multijugador
-void encabezadoMultijugador(string nombres[2], int modoDeJuego);
+void encabezadoMultijugador(string nombres[2], int modoDeJuego, string nombreMax,  int puntajeMax);
 
 ///numero random
 int tirarDado();
@@ -97,21 +97,18 @@ bool escalera(int dados[6]);
 void ganador_por_escalera(string ganador_de_la_escalera);
 
 
-int revision_de_ganador_por_puntaje(string nombres[2], int puntajes[2]);
+int revision_de_ganador_por_puntaje(string nombres[2], int puntajes[2], string nombreMax, int puntajeMax);
 
 
 void impresion_ganador_escalera(string titulo_ganador_escalera ,string titulo_ganador_escalera2, string ganador_de_la_escalera);
 
 void impresion_ganador(string cadena_ganador, string cadena_ganador2,string cadena_ganador3,string nombre,int valor);
 
-void peticion_nombre_Un_jugador(int num);
+void peticion_nombre_Un_jugador(int num, string nombreMax,  int puntajeMax);
 
-void uno_O_Dos_Jugadores();
 
 
 void menu_trasero(int num);
-
-void elegir_menu_final();
 
 int revision_ganador_un_jugador(int puntaje_J1[1]);
 

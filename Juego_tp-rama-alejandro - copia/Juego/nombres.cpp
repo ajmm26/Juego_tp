@@ -17,7 +17,7 @@ jugador_modo_simulado(mododejuego,name);
 
 }*/
 
-void peticion_nombre_Un_jugador(int mododejuego){
+void peticion_nombre_Un_jugador(int mododejuego,string nombreMax,  int puntajeMax){
 
 decision(mododejuego);
 
@@ -36,15 +36,16 @@ encabezadoUnjugador(mododejuego,name);
 
 
 
-void ingresovectorNombres(string nombres[2], int mododejuego){
+void ingresovectorNombres(int mododejuego,string nombreMax,  int puntajeMax){
 system("cls");
 decision(mododejuego);
 cin.ignore();
+string nombres[2] = {};
 for(int i=1; i<3; i++){
     cout<<"Ingrese el nombre del jugador "<<i<<": ";
     getline(cin,nombres[i-1]);
 }
-SaludoMultijugador(nombres,mododejuego);
+SaludoMultijugador(nombres,mododejuego, nombreMax,   puntajeMax);
 }
 
 
@@ -66,7 +67,7 @@ cout<<""<<endl;
 
 
 
- void SaludoMultijugador( string nombres[2], int mododejuego){
+ void SaludoMultijugador( string nombres[2], int mododejuego,string nombreMax,  int puntajeMax){
 
 
     for(int x=0; x<1; x++){
@@ -79,7 +80,7 @@ cout<<""<<endl;
  }
 
  system("pause");
-encabezadoMultijugador(nombres,mododejuego);
+encabezadoMultijugador(nombres,mododejuego,  nombreMax,   puntajeMax);
  }
 
 

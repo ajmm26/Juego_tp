@@ -53,7 +53,7 @@ menu_trasero(mododejuego);
 
 
 
-void encabezadoUnjugador(int mododejuego, string name)
+void encabezadoUnjugador(int mododejuego, string name,string nombreMax,  int puntajeMax)
 {
     system("cls");
     decision(mododejuego);
@@ -69,13 +69,14 @@ void encabezadoUnjugador(int mododejuego, string name)
 
 
     }
+  //TODO  ,string nombreMax,  int puntajeMax)
 ganador_un_jugador(puntaje,name);
 espacios();
 menu_trasero(mododejuego);
 }
 
 
-void encabezadoMultijugador(string nombres[2], int mododejuego)
+void encabezadoMultijugador(string nombres[2], int mododejuego, string nombreMax,  int puntajeMax)
 {
      system("cls");
     decision(mododejuego);
@@ -89,9 +90,9 @@ void encabezadoMultijugador(string nombres[2], int mododejuego)
         while(puntaje<100){
         marcador_multijugador(nombres,dados,turno,puntajes,puntaje);
         turno++;
-        puntaje=revision_de_ganador_por_puntaje(nombres,puntajes);
+        puntaje=revision_de_ganador_por_puntaje(nombres,puntajes,  nombreMax,  puntajeMax);
 
 }
 
-    menu_trasero(mododejuego);
+    menu_trasero(mododejuego, );
 }

@@ -170,10 +170,40 @@ return 2;
 
 
 
+int[] obtenerValorDados() {
+  int dados[6] = {};
+  int num;
+
+  cout << "Ingrese el valor de los dados: " << endl;
+  for (int i = 0; i < 6; i++) {
+    cin >> num;
+    dados[i] = num;
+  }
+
+  return dados;
+}
+
+void compararPuntuacionEnTodoElJuego(string nombreActual, int puntajeActual,
+                                     string nombreMax, int puntajeMax) {
+  if (puntajeActual <= puntajeMax) {
+    // no supera al máximo salimos de la función sin hacer modificaciones
+    return;
+  }
+
+  // si supera al máximo mostrar cartel y asignar nuevos máximos
+  if (puntajeMax > 0 && puntajeActual > puntajeMax) {
+    cout << "NUEVA PUNTUACION MAXIMA: El Jugador " << nombreActual << " con "
+         << puntajeActual << " puntos, superó al Jugador " << nombreMax
+         << " que tenía " << puntajeMax << " puntos!";
+  }
+
+  nombreMax = nombreActual;
+  puntajeMax = puntajeActual;
+}
 
 
 
-int revision_de_ganador_por_puntaje(string nombres[2], int puntajes[2]){
+int revision_de_ganador_por_puntaje(string nombres[2], int puntajes[2], string nombreMax, int puntajeMax){
 int R=verificacion_100(puntajes);
 int valor=0;
 string nombre_ganador;
@@ -185,6 +215,7 @@ string nombre_ganador;
             nombre_ganador=nombres[0];
             valor=puntajes[0];
             ganador(nombre_ganador,valor);
+            compararPuntuacionEnTodoElJuego(nombre_ganador, valor,nombreMax,puntajeMax);
             return valor;
 
         }
@@ -194,6 +225,7 @@ string nombre_ganador;
             nombre_ganador=nombres[1];
             valor=puntajes[1];
             ganador(nombre_ganador,valor);
+            compararPuntuacionEnTodoElJuego(nombre_ganador, valor,nombreMax,puntajeMax);
             return valor;
 
 
@@ -203,6 +235,7 @@ string nombre_ganador;
             nombre_ganador=nombres[0];
             valor=puntajes[0];
             ganador_un_jugador(valor,nombre_ganador);
+            compararPuntuacionEnTodoElJuego(nombre_ganador, valor,nombreMax,puntajeMax);
             return valor;
 
             }
@@ -211,6 +244,7 @@ string nombre_ganador;
             nombre_ganador=nombres[1];
             valor=puntajes[1];
             ganador_un_jugador(valor,nombre_ganador);
+            compararPuntuacionEnTodoElJuego(nombre_ganador, valor,nombreMax,puntajeMax);
             return valor;
             }
 

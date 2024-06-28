@@ -11,12 +11,13 @@ int main()
 ///semilla
  srand(time(0));
 
-///diseño de la consola
+///diseï¿½o de la consola
 system("COLOR F0");
 
 
 
 bienvenida();
+menu_trasero();
 
 
 
