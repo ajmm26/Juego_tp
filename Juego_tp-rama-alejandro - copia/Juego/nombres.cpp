@@ -4,8 +4,10 @@
 using namespace std;
 
 
-/*void peticion_nombre_Un_jugador_simulado(int mododejuego){
+void peticion_nombre_Un_jugador(int mododejuego, int max_punt){
+
 decision(mododejuego);
+
 string name;
 cout<<"Ingrese el nombre: ";
 cin.ignore();
@@ -13,22 +15,12 @@ getline(cin, name);
 system("cls");
 saludo_Un_Jugador(name,mododejuego);
 system("pause");
-jugador_modo_simulado(mododejuego,name);
+detener_musica();
+/*if(mododejuego==3){
+        jugador_modo_simulado(mododejuego,name,max_punt);
 
 }*/
-
-void peticion_nombre_Un_jugador(int mododejuego){
-
-decision(mododejuego);
-
-string name;
-cout<<"Ingrese el nombre: ";
-cin.ignore();
-getline(cin, name);
-system("cls");
-saludo_Un_Jugador(name,mododejuego);
-system("pause");
-encabezadoUnjugador(mododejuego,name);
+encabezadoUnjugador(mododejuego,name,max_punt);
 
 
 }
@@ -36,7 +28,7 @@ encabezadoUnjugador(mododejuego,name);
 
 
 
-void ingresovectorNombres(string nombres[2], int mododejuego){
+void ingresovectorNombres(string nombres[2], int mododejuego,int max_punt){
 system("cls");
 decision(mododejuego);
 cin.ignore();
@@ -44,7 +36,7 @@ for(int i=1; i<3; i++){
     cout<<"Ingrese el nombre del jugador "<<i<<": ";
     getline(cin,nombres[i-1]);
 }
-SaludoMultijugador(nombres,mododejuego);
+SaludoMultijugador(nombres,mododejuego,max_punt);
 }
 
 
@@ -66,7 +58,7 @@ cout<<""<<endl;
 
 
 
- void SaludoMultijugador( string nombres[2], int mododejuego){
+ void SaludoMultijugador( string nombres[2], int mododejuego,int max_punt){
 
 
     for(int x=0; x<1; x++){
@@ -75,11 +67,14 @@ cout<<""<<endl;
     cout<<"Bienvenidos al juego "<<nombres[x]<<" y "<<nombres[x+1]<<", buena suerte!"<<endl;
 
 
-
  }
 
  system("pause");
-encabezadoMultijugador(nombres,mododejuego);
+detener_musica();
+/*if(mododejuego==4){
+    encabezadoMultijugador_Simulado(nombres,mododejuego,max_punt);
+}*/
+encabezadoMultijugador(nombres,mododejuego,max_punt);
  }
 
 

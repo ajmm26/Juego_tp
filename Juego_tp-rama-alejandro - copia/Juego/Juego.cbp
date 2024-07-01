@@ -34,8 +34,11 @@
 		</Compiler>
 		<Unit filename="Modosdejuego.cpp" />
 		<Unit filename="Reglas.cpp" />
+		<Unit filename="Sonido_De_victoria_por_puntaje.wav" />
+		<Unit filename="canciones_Y_sonidos.cpp" />
 		<Unit filename="cara_de_dados.cpp" />
 		<Unit filename="dados.cpp" />
+		<Unit filename="dados.wav" />
 		<Unit filename="funciones.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -43,10 +46,12 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="marcadores.cpp" />
 		<Unit filename="menu.cpp" />
+		<Unit filename="menu.wav" />
 		<Unit filename="nombres.cpp" />
 		<Unit filename="puntaje_Multijugador.cpp" />
 		<Unit filename="puntaje_UnJugador.cpp" />
 		<Unit filename="rlutil.h" />
+		<Unit filename="victoria_por_escalera.wav" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

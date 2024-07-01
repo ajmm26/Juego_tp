@@ -7,7 +7,15 @@
 using namespace std;
 
 
-void bienvenida(){
+void init_max_punt(){
+int max_punt=0;
+rlutil::locate(45,15);
+cout<<"PRESIONA UNA TECLA PARA EMPEZAR"<<endl;
+cancion_menu();
+bienvenida(max_punt);
+}
+
+void bienvenida(int max_punt){
 system("cls");
 string inicial="ESCALERA O 100";
 rlutil::locate(52,1);
@@ -22,47 +30,51 @@ cout<<guion;
 
 }
 system("pause");
-menu();
+menu(max_punt);
 
 }
 
 
-void menu(){
-
+void menu(int max_punt){
 system("cls");
-
-
 cout<<"--------------------------------------------------------Menu Principal------------------------------------------------"<<endl;
+rlutil::locate(50,3);
+cout<<"Maxima puntuacion global: "<<max_punt<<endl;
 cout<<"Modos de juego: "<<endl;
 cout<<"1- Un jugador"<<endl;
 cout<<"2- multijugador"<<endl;
-///cout<<"3- simulado"<<endl;
+/*cout<<"3- simulado un jugador"<<endl;
+cout<<"4- simulado multijugador"<<endl;*/
 cout<<""<<endl;
 cout<<"Seleccione el modo de juego: ";
 
-uno_O_Dos_Jugadores();
+uno_O_Dos_Jugadores(max_punt);
 
 }
 
 
 
-void uno_O_Dos_Jugadores(){
+void uno_O_Dos_Jugadores(int max_punt){
 string nombres[2]={};
 int modoDeJuego;
 cin>>modoDeJuego;
 system("cls");
 switch(modoDeJuego){
 case 1:
-peticion_nombre_Un_jugador(modoDeJuego);
+peticion_nombre_Un_jugador(modoDeJuego,max_punt);
 break;
 
 
 case 2:
-ingresovectorNombres(nombres,modoDeJuego);
+ingresovectorNombres(nombres,modoDeJuego,max_punt);
 break;
 
 /*case 3:
-    peticion_nombre_Un_jugador_simulado(modoDeJuego);
+   peticion_nombre_Un_jugador(modoDeJuego,max_punt);
+break;
+
+case 4:
+ingresovectorNombres(nombres,modoDeJuego,max_punt);
 break;*/
 
 }
@@ -74,7 +86,7 @@ break;*/
 
 
 
-void menu_trasero(int mododejuego){
+void menu_trasero(int mododejuego, int max_punt){
 system("cls");
 decision(mododejuego);
 string menu_fin="Menu del fin de juego";
@@ -92,21 +104,20 @@ cout<<opcion_3<<endl;
 string eleccion="Elija una opcion: ";
 rlutil::locate(1,11);
 cout<<eleccion;
-elegir_menu_final();
+elegir_menu_final(max_punt);
 
 }
 
-void elegir_menu_final(){
-
+void elegir_menu_final(int max_punt){
 int num;
 cin>>num;
 switch(num){
 
 case 1:
-       menu();
+       menu(max_punt);
     break;
 case 2:
-    bienvenida();
+    bienvenida(max_punt);
     break;
 
 

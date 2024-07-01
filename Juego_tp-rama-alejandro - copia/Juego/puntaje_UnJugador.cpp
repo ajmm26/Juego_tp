@@ -42,6 +42,6 @@ if(puntaje==100000){
     ganador_por_escalera(name);
 }
 else{
-    ganador(name,puntaje);
+   ganador(name,puntaje,"",0);
 }
 }

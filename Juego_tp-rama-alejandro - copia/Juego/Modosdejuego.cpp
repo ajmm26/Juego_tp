@@ -12,6 +12,7 @@ void decision(int num)
 
     else
     {
+        if(num==2 || num==4)
         cout<<"                                                       MULTIJUGADOR                                                   "<<endl;
     }
 
@@ -25,7 +26,7 @@ void decision(int num)
 
 
 
-/*void jugador_modo_simulado(int mododejuego, string name)
+/*void jugador_modo_simulado(int mododejuego, string name,int max_punt)
 {
     system("cls");
     decision(mododejuego);
@@ -42,8 +43,29 @@ void decision(int num)
 
     }
 ganador_un_jugador(puntaje,name);
-espacios();
-menu_trasero(mododejuego);
+max_Puntaje_global(puntaje,mododejuego,max_punt);
+}
+
+
+void encabezadoMultijugador_Simulado(string nombres[2], int mododejuego,int max_punt)
+{
+     system("cls");
+    decision(mododejuego);
+    int i;
+    bool escalera;
+    string nombre_ganador;
+    int puntaje=0;
+    int dados[6]= {};
+    int turno=1;
+    int puntajes[2]= {};
+        while(puntaje<100){
+        marcador_multijugador_simulado(nombres,dados,turno,puntajes,puntaje);
+        turno++;
+        puntaje=revision_de_ganador_por_puntaje(nombres,puntajes);
+
+}
+
+   max_Puntaje_global(puntaje,mododejuego,max_punt);
 }*/
 
 
@@ -51,9 +73,7 @@ menu_trasero(mododejuego);
 
 
 
-
-
-void encabezadoUnjugador(int mododejuego, string name)
+void encabezadoUnjugador(int mododejuego, string name,int max_punt)
 {
     system("cls");
     decision(mododejuego);
@@ -70,12 +90,11 @@ void encabezadoUnjugador(int mododejuego, string name)
 
     }
 ganador_un_jugador(puntaje,name);
-espacios();
-menu_trasero(mododejuego);
+max_Puntaje_global(puntaje,mododejuego,max_punt);
 }
 
 
-void encabezadoMultijugador(string nombres[2], int mododejuego)
+void encabezadoMultijugador(string nombres[2], int mododejuego,int max_punt)
 {
      system("cls");
     decision(mododejuego);
@@ -93,5 +112,5 @@ void encabezadoMultijugador(string nombres[2], int mododejuego)
 
 }
 
-    menu_trasero(mododejuego);
+   max_Puntaje_global(puntaje,mododejuego,max_punt);
 }

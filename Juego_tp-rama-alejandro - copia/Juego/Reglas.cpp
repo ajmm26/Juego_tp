@@ -137,7 +137,21 @@ int corte_por_escalera(){
 
 int verificacion_100(int puntajes[2]){
 int ver;
-for(int i=0; i<2; i++)
+if(puntajes[0]>=100 && puntajes[1]>=100){
+ if(puntajes[0]>puntajes[1]){
+    ver=0;
+    return ver;
+ }
+
+ else{
+    if(puntajes[0]<puntajes[1]){
+        ver=1;
+        return ver;
+    }
+ }
+}
+else{
+
 if(puntajes[0]==100000){
   ver=4;
   return ver;
@@ -149,7 +163,7 @@ else{
         return 5;
     }
 }
-
+}
 
  if(puntajes[0]>=100){
 
@@ -172,19 +186,22 @@ return 2;
 
 
 
-
 int revision_de_ganador_por_puntaje(string nombres[2], int puntajes[2]){
 int R=verificacion_100(puntajes);
 int valor=0;
+int valor2=0;
 string nombre_ganador;
+string nombre_segundo;
 
 
 
         if(R==0){
 
             nombre_ganador=nombres[0];
+            nombre_segundo=nombres[1];
             valor=puntajes[0];
-            ganador(nombre_ganador,valor);
+            valor2=puntajes[1];
+            ganador(nombre_ganador,valor,nombre_segundo,valor2);
             return valor;
 
         }
@@ -192,8 +209,10 @@ string nombre_ganador;
         if(R==1){
 
             nombre_ganador=nombres[1];
+            nombre_segundo=nombres[0];
             valor=puntajes[1];
-            ganador(nombre_ganador,valor);
+            valor2=puntajes[0];
+            ganador(nombre_ganador,valor,nombre_segundo,valor2);
             return valor;
 
 
@@ -236,3 +255,18 @@ return valor;
 
 
 }
+
+void max_Puntaje_global(int puntaje, int mododejuego,int max_punt){
+if(puntaje==100000){
+
+menu_trasero(mododejuego,max_punt);
+}
+else{
+if(max_punt<puntaje){
+    max_punt=puntaje;
+}
+}
+menu_trasero(mododejuego,max_punt);
+}
+
+

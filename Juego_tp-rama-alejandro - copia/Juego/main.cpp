@@ -16,7 +16,7 @@ system("COLOR F0");
 
 
 
-bienvenida();
+init_max_punt();
 
 
 

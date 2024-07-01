@@ -71,12 +71,12 @@ void buscardor_maximo_puntaje(int i, int puntajes_rondas_J1[3], int puntajes_ron
     for(int x=0; x<3; x++)
     {
 
-        if(com1<puntajes_rondas_J1[x])
+        if(com1<puntajes_rondas_J1[x] && i==0)
         {
             com1=puntajes_rondas_J1[x];
         }
 
-        if(com2<puntajes_rondas_J2[x])
+        if(com2<puntajes_rondas_J2[x] && i==1)
         {
             com2=puntajes_rondas_J2[x];
         }
