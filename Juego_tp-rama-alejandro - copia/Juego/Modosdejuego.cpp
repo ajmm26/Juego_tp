@@ -53,26 +53,21 @@ menu_trasero(mododejuego);
 
 
 
-void encabezadoUnjugador(int mododejuego, string name,string nombreMax,  int puntajeMax)
+void encabezadoUnjugador(string nombreActual,int mododejuego,string nombreMax,  int puntajeMax)
 {
     system("cls");
     decision(mododejuego);
     int turno=1;
     int dados[6]= {};
-    int puntaje=0;
+    int puntajeActual=0;
     int puntaje_J1[1]= {};
-    while(puntaje<100)
-    {
-        puntaje=marcador_Unjugador(name,turno,dados,puntaje_J1);
+    while(puntajeActual<100) {
+        puntajeActual=marcador_Unjugador(nombreActual,turno,dados,puntaje_J1);
         turno++;
-
-
-
     }
-  //TODO  ,string nombreMax,  int puntajeMax)
-ganador_un_jugador(puntaje,name);
-espacios();
-menu_trasero(mododejuego, nombreMax, puntajeMax);
+    verificarJugadorGanaSinEscalera(nombreActual, puntajeActual,nombreMax,puntajeMax);
+    espacios();
+    menu_trasero(mododejuego, nombreMax, puntajeMax);
 }
 
 
@@ -87,12 +82,12 @@ void encabezadoMultijugador(string nombres[2], int mododejuego, string nombreMax
     int dados[6]= {};
     int turno=1;
     int puntajes[2]= {};
-        while(puntaje<100){
+    while(puntaje<100){
         marcador_multijugador(nombres,dados,turno,puntajes,puntaje);
         turno++;
         puntaje=revision_de_ganador_por_puntaje(nombres,puntajes,  nombreMax,  puntajeMax);
+    }
 
-}
 
     menu_trasero(mododejuego, nombreMax,  puntajeMax);
 }

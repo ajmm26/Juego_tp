@@ -24,6 +24,21 @@ cout<<guion;
 system("pause");
 }
 
+string peticion_nombre_Un_jugador(int mododejuego,string nombreMax,  int puntajeMax){
+
+  decision(mododejuego);
+
+  string name;
+  cout<<"Ingrese el nombre: ";
+  cin.ignore();
+  getline(cin, name);
+  system("cls");
+  saludo_Un_Jugador(name,mododejuego);
+  system("pause");
+  return name;
+}
+
+
 void mostrarPuntuacionMasAlta( string nombreMax,  int puntajeMax = 0){
      system("cls");
     if(puntajeMax==0){
@@ -54,18 +69,28 @@ decision(mododejuego);
   int modoDeJuego;
   cin >> modoDeJuego;
   system("cls");
-  //todo string nombreMax,  int puntajeMax
-
   switch (modoDeJuego) {
     case 0:
       return 0;
       break;
-    case 1:
-      peticion_nombre_Un_jugador(modoDeJuego, nombreMax,   puntajeMax);
+    case 1:{
+          string nombre = peticion_nombre_Un_jugador(modoDeJuego, nombreMax,   puntajeMax);
+          encabezadoUnjugador(nombre,mododejuego,nombreMax,puntajeMax);
+      }
       break;
+    case 2:{
+          system("cls");
+          decision(mododejuego);
+          cin.ignore();
+          string nombres[2] = {};
+          for(int i=1; i<3; i++){
+              cout<<"Ingrese el nombre del jugador "<<i<<": ";
+              getline(cin,nombres[i-1]);
+          }
+          SaludoMultijugador(nombres,mododejuego);
+          encabezadoMultijugador(nombres,mododejuego,  nombreMax,   puntajeMax);
+        }
 
-    case 2:
-      ingresovectorNombres(modoDeJuego, nombreMax,   puntajeMax);
       break;
 
       /*case 3:
@@ -77,4 +102,7 @@ decision(mododejuego);
     break;
   }
 }
+
+
+
 

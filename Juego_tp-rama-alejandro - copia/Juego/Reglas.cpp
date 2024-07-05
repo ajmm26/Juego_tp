@@ -184,14 +184,15 @@ int[] obtenerValorDados() {
 }
 */
 void compararPuntuacionEnTodoElJuego(string nombreActual, int puntajeActual,
-                                     string nombreMax, int puntajeMax) {
+                                     string& nombreMax, int& puntajeMax) {
+     cout << "Comparando PUNTUACION MAXIMA..." << puntajeActual << " puntos actual contra " << puntajeMax << " puntos!";
   if (puntajeActual <= puntajeMax) {
     // no supera al máximo salimos de la función sin hacer modificaciones
     return;
   }
 
   // si supera al máximo mostrar cartel y asignar nuevos máximos
-  if (puntajeMax > 0 && puntajeActual > puntajeMax) {
+  if (puntajeActual > puntajeMax) {
     cout << "NUEVA PUNTUACION MAXIMA: El Jugador " << nombreActual << " con "
          << puntajeActual << " puntos, superó al Jugador " << nombreMax
          << " que tenía " << puntajeMax << " puntos!";
@@ -199,23 +200,34 @@ void compararPuntuacionEnTodoElJuego(string nombreActual, int puntajeActual,
 
   nombreMax = nombreActual;
   puntajeMax = puntajeActual;
+  system("pause");
+}
+
+void verificarJugadorGanaSinEscalera(string nombreActual, int puntajeActual,
+                                     string nombreMax, int puntajeMax){
+            if(puntajeActual==100000){
+                ganador_por_escalera(nombreActual);
+            }
+            else{
+                ganador(nombreActual,puntajeActual);
+                compararPuntuacionEnTodoElJuego(nombreActual, puntajeActual,nombreMax,puntajeMax);
+            }
 }
 
 
 
 int revision_de_ganador_por_puntaje(string nombres[2], int puntajes[2], string nombreMax, int puntajeMax){
-int R=verificacion_100(puntajes);
-int valor=0;
-string nombre_ganador;
+    int R=verificacion_100(puntajes);
+    int valor=0;
+    string nombre_ganador;
 
 
 
         if(R==0){
-
             nombre_ganador=nombres[0];
-            valor=puntajes[0];
-            ganador(nombre_ganador,valor);
-            compararPuntuacionEnTodoElJuego(nombre_ganador, valor,nombreMax,puntajeMax);
+            valor = puntajes[0];
+             verificarJugadorGanaSinEscalera(nombre_ganador, valor, nombreMax, puntajeMax);
+
             return valor;
 
         }
@@ -223,36 +235,31 @@ string nombre_ganador;
         if(R==1){
 
             nombre_ganador=nombres[1];
-            valor=puntajes[1];
-            ganador(nombre_ganador,valor);
-            compararPuntuacionEnTodoElJuego(nombre_ganador, valor,nombreMax,puntajeMax);
+            valor = puntajes[1];
+             verificarJugadorGanaSinEscalera(nombre_ganador, valor, nombreMax, puntajeMax);
+
             return valor;
-
-
         }
 
         if(R==4){
             nombre_ganador=nombres[0];
-            valor=puntajes[0];
-            ganador_un_jugador(valor,nombre_ganador);
-            compararPuntuacionEnTodoElJuego(nombre_ganador, valor,nombreMax,puntajeMax);
+             valor = puntajes[0];
+             verificarJugadorGanaSinEscalera(nombre_ganador, valor, nombreMax, puntajeMax);
+
+
             return valor;
+        } else{
+            if(R==5){
+                nombre_ganador=nombres[1];
+                valor = puntajes[1];
+                verificarJugadorGanaSinEscalera(nombre_ganador, valor, nombreMax, puntajeMax);
 
+                return valor;
             }
-            else{
-              if(R==5){
-            nombre_ganador=nombres[1];
-            valor=puntajes[1];
-            ganador_un_jugador(valor,nombre_ganador);
-            compararPuntuacionEnTodoElJuego(nombre_ganador, valor,nombreMax,puntajeMax);
-            return valor;
-            }
-
-
-return 5;
-
+            return 5;
+        }
 }
-}
+
 
 
 

@@ -7,17 +7,13 @@ using namespace std;
 void bienvenida();
 void decision(int num);
 
-///peticion de los nombres multijugador
-void ingresovectorNombres(int num,string nombreMax,  int puntajeMax);
-
 
 ///saludo a los jugadores
-void SaludoMultijugador(string nombres[2], int mododejuego,string nombreMax,  int puntajeMax);
-
+void SaludoMultijugador(string nombres[2], int mododejuego);
 void saludo_Un_Jugador(string name, int mododejuego);
 
 ///encabezado de jugador(nombre,ronda,turno y puntuacion)
-void encabezadoUnjugador(int mododejuego, string name,string nombreMax,  int puntajeMax);
+void encabezadoUnjugador( string name,int mododejuego,string nombreMax,  int puntajeMax);
 
 /// Encabezado multijugador
 void encabezadoMultijugador(string nombres[2], int modoDeJuego, string nombreMax,  int puntajeMax);
@@ -64,10 +60,6 @@ void guardado_J1(int a, int tiradas[3], int ronda);
 
 void max_puntacion(int tiradas[3], int puntaje_J1[1]);
 
-
-void guardar_maximo(int com1,int comp2,int puntajes[2]);
-
-
 void icono_dados(int dados[6]);
 
 
@@ -103,8 +95,6 @@ void impresion_ganador_escalera(string titulo_ganador_escalera ,string titulo_ga
 
 void impresion_ganador(string cadena_ganador, string cadena_ganador2,string cadena_ganador3,string nombre,int valor);
 
-void peticion_nombre_Un_jugador(int num, string nombreMax,  int puntajeMax);
-
 
 
 int menu_trasero(int num, string nombreMax, int puntajeMax);
@@ -118,7 +108,6 @@ void dibujar_cuadrado(int posx, int posy);
 void dibujar_dado(int numero, int posx, int posy);
 void espacios();
 void imprimir_tirada(int dados[6],bool tirada_de_diez, bool tirada_de_cero, bool revision_escalera);
-void ganador_un_jugador(int puntaje, string name);
 int corte_por_escalera();
 
 void jugador_modo_simulado(int mododejuego, string name);
@@ -129,6 +118,7 @@ int modo_simulado(string name, int turno, int dados[6],int puntaje_J3[1]);
   void peticion_nombre_Un_jugador_simulado(int mododejuego);
 
 
-
+void verificarJugadorGanaSinEscalera(string nombreActual, int puntajeActual,
+                                     string nombreMax, int puntajeMax);
 
 #endif // FUNCIONES_H_INCLUDED

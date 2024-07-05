@@ -83,31 +83,8 @@ void buscardor_maximo_puntaje(int i, int puntajes_rondas_J1[3], int puntajes_ron
 
     }
 
-    guardar_maximo(com1,com2, puntajes);
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-void guardar_maximo(int com1,int com2,int puntajes[2])
-{
-
-
     puntajes[0]+=com1;
-
-
     puntajes[1]+=com2;
-
-
 
 }
 int quien_gana_por_escalera(int i)

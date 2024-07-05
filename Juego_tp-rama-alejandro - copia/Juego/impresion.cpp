@@ -201,16 +201,14 @@ int a=0;
 if(revision_escalera==false){
 
 for(int i=0; i<6; i++){
-
     a+=dados[i];
-
 }
 
 
 if(tirada_de_diez==true){
 
    cout<<"Sacaste 6 dados Iguales!!!"<<endl;
-    cout<<"un dado se multiplica por 10: "<<dados[0]*10;
+    cout<<"El valor del dado se multiplica por 10: 10*"<<dados[0]<<"="<<dados[0]*10;
 
 }
 else{
@@ -224,7 +222,7 @@ if(tirada_de_cero==true){
 
     else{
 
-cout<<"El puntaje de tu tirada en esta tirada es de: "<<a<<endl;
+cout<<"El puntaje de esta tirada es de: "<<a<<endl;
 
     }
 }

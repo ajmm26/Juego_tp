@@ -150,7 +150,7 @@
 	<iostream>
 	"funciones.h"
 
-1719613366 c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\funciones.h
+1719620730 c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\funciones.h
 	<iostream>
 
 1719608731 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\dados.cpp
@@ -172,7 +172,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1719608731 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\impresion.cpp
+1719617020 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\impresion.cpp
 	<iostream>
 	"funciones.h"
 	"rlutil.h"
@@ -181,24 +181,24 @@
 	<iostream>
 	"funciones.h"
 
-1719608731 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\puntaje_multijugador.cpp
+1719618276 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\puntaje_multijugador.cpp
 	<iostream>
 	"funciones.h"
 
-1719608731 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\puntaje_unjugador.cpp
+1719618969 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\puntaje_unjugador.cpp
 	<iostream>
 	"funciones.h"
 	"rlutil.h"
 
-1719613162 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\modosdejuego.cpp
+1719620679 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\modosdejuego.cpp
 	"funciones.h"
 	<iostream>
 
-1719613181 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\reglas.cpp
+1719621945 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\reglas.cpp
 	<iostream>
 	"funciones.h"
 
-1719613303 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\nombres.cpp
+1719620320 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\nombres.cpp
 	"funciones.h"
 	<iostream>
 	"rlutil.h"
@@ -210,7 +210,7 @@
 	<stdio.h>
 	<ctime>
 
-1719613420 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\menu.cpp
+1719621363 source:c:\users\win10\desktop\utn\juego_tp\juego_tp-rama-alejandro - copia\juego\menu.cpp
 	<iostream>
 	"funciones.h"
 	<windows.h>

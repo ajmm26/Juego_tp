@@ -36,12 +36,3 @@ puntaje_J1[0]+=comJ1;
 
 }
 
-void ganador_un_jugador(int puntaje, string name){
-
-if(puntaje==100000){
-    ganador_por_escalera(name);
-}
-else{
-    ganador(name,puntaje);
-}
-}
