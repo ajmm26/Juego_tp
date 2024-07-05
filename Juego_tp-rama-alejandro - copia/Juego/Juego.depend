@@ -1,0 +1,157 @@
+# depslib dependency file v1.0
+1719371199 source:c:\users\ale\desktop\juego\menu.cpp
+	<iostream>
+	"funciones.h"
+	<windows.h>
+	<stdio.h>
+	<ctime>
+	"rlutil.h"
+
+1719371592 source:c:\users\ale\desktop\juego\main.cpp
+	<iostream>
+	"funciones.h"
+	<windows.h>
+	<stdio.h>
+	<ctime>
+
+1719447839 c:\users\ale\desktop\juego\funciones.h
+	<iostream>
+
+1717942258 c:\users\ale\desktop\juego\menu.cpp
+	"funciones.h"
+	<iostream>
+
+1719447925 source:c:\users\ale\desktop\juego\modosdejuego.cpp
+	"funciones.h"
+	<iostream>
+
+1719371537 source:c:\users\ale\desktop\juego\nombres.cpp
+	"funciones.h"
+	<iostream>
+	"rlutil.h"
+
+1719366101 source:c:\users\ale\desktop\juego\dados.cpp
+	<iostream>
+	"funciones.h"
+	<algorithm>
+
+1719447758 source:c:\users\ale\desktop\juego\reglas.cpp
+	<iostream>
+	"funciones.h"
+
+1719447839 source:c:\users\ale\desktop\juego\marcadores.cpp
+	<iostream>
+	"funciones.h"
+
+1719352331 source:c:\users\ale\desktop\juego\cara_de_dados.cpp
+	<iostream>
+	"funciones.h"
+
+1719360886 source:c:\users\ale\desktop\juego\puntaje_multijugador.cpp
+	<iostream>
+	"funciones.h"
+
+1719447685 source:c:\users\ale\desktop\juego\puntaje_unjugador.cpp
+	<iostream>
+	"funciones.h"
+
+1719373103 source:c:\users\ale\desktop\juego\impresion.cpp
+	<iostream>
+	"funciones.h"
+	"rlutil.h"
+
+1719363737 c:\users\ale\desktop\juego\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1719533311 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\cara_de_dados.cpp
+	<iostream>
+	"funciones.h"
+
+1719870362 c:\users\ale\desktop\juego_tp-rama-alejandro\juego\funciones.h
+	<iostream>
+
+1719870626 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\dados.cpp
+	<iostream>
+	"funciones.h"
+	"rlutil.h"
+
+1719870385 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\impresion.cpp
+	<iostream>
+	"funciones.h"
+	"rlutil.h"
+
+1719448093 c:\users\ale\desktop\juego_tp-rama-alejandro\juego\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1719765976 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\main.cpp
+	<iostream>
+	"funciones.h"
+	<windows.h>
+	<stdio.h>
+	<ctime>
+
+1719870471 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\marcadores.cpp
+	<iostream>
+	"funciones.h"
+
+1719870922 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\menu.cpp
+	<iostream>
+	"funciones.h"
+	<windows.h>
+	<stdio.h>
+	<ctime>
+	"rlutil.h"
+
+1719870674 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\modosdejuego.cpp
+	"funciones.h"
+	<iostream>
+
+1719614986 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\puntaje_multijugador.cpp
+	<iostream>
+	"funciones.h"
+
+1719868572 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\puntaje_unjugador.cpp
+	<iostream>
+	"funciones.h"
+	"rlutil.h"
+
+1719766505 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\reglas.cpp
+	<iostream>
+	"funciones.h"
+
+1719870922 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\nombres.cpp
+	"funciones.h"
+	<iostream>
+	"rlutil.h"
+
+1719869688 source:c:\users\ale\desktop\juego_tp-rama-alejandro\juego\canciones_y_sonidos.cpp
+	<iostream>
+	"rlutil.h"
+	<ctime>
+	<thread>
+	<chrono>
+	<windows.h>
+	<cstdio>
+
